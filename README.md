@@ -1,4 +1,4 @@
-# viz.clc
+# viz.cljc
 
 Generate images from [Graphviz](http://graphviz.org) dot strings using
 [Viz.js](https://github.com/mdaines/viz.js/) in both
