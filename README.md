@@ -14,11 +14,14 @@ Clojure and Clojurescript.
 
 ##  Why?
 
-* One interface for both Clojure and Clojurescript.
+This library provides one interface `viz.core/image` for both Clojure and
+Clojurescript. For Clojure, the dependency on the Graphviz `dot` binary is
+no longer necessary. For Clojurescript, this library eliminates the need to
+separately include Viz.js.
 
-* To provide externs for ClojureScript.
-
-* Remove the dependency on Graphviz `dot` binary from Clojure.
+Everything in this library is self contained, as it includes and uses Viz.js.
+This also ensures complete consistency (formatting nuances, etc) between
+Clojure and Clojurescript.
 
 ## Usage
 
