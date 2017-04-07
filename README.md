@@ -16,8 +16,8 @@ Clojure and Clojurescript.
 
 This library provides one interface `viz.core/image` for both Clojure and
 Clojurescript. For Clojure, the dependency on the Graphviz `dot` binary is
-no longer necessary. For Clojurescript, this library eliminates the need to
-separately include Viz.js.
+not necessary (as it is with other libraries). For Clojurescript, this 
+library eliminates the need to separately include Viz.js.
 
 Everything in this library is self contained, as it includes and uses Viz.js.
 This also ensures complete consistency (formatting nuances, etc) between
