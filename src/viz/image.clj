@@ -8,7 +8,7 @@
   []
   (let [engine (.getEngineByMimeType (ScriptEngineManager.)
                                      "application/javascript")]
-    (.eval engine (slurp (io/resource "viz.js")))
+    (.eval engine (slurp (io/resource "vizjs/viz.js")))
     engine))
 
 (def get-engine (memoize get-engine*))
