@@ -3,4 +3,4 @@
 
 (def image viz.image/image)
 
-(comment (image "digraph { c --> b };"))
+(comment (image "digraph { c -> b };"))
