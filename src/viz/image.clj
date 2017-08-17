@@ -1,6 +1,7 @@
 (ns viz.image
   (:require
-    [clojure.java.io :as io])
+    [clojure.java.io :as io]
+    [clojure.string :as string])
   (:import
     (javax.script ScriptEngineManager)))
 
@@ -13,6 +14,10 @@
 
 (def get-engine (memoize get-engine*))
 
+(defn sanitize [s]
+  "Escape multi line strings for Nashorn."
+  (string/replace s "\n" "\\n"))
+
 (defn image
   [dot-string]
-  (.eval (get-engine) (str "Viz('" dot-string "');")))
+  (.eval (get-engine) (str "Viz('" (sanitize dot-string) "');")))
