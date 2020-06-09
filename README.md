@@ -9,7 +9,7 @@ Clojure and Clojurescript.
 ### Leiningen dependency
 
 ```clojure
-[viz-cljc "0.1.3"]
+[viz-cljc "0.1.4"]
 ```
 
 ##  Why?

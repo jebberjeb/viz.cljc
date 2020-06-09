@@ -1,3 +1,5 @@
 target/
 out/
 .classpath
+resources/out/*
+!resources/out/viz-cljc.js
