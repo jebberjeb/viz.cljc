@@ -8,9 +8,7 @@ Clojure and Clojurescript.
 
 ### Leiningen dependency
 
-```clojure
-[viz-cljc "0.1.4"]
-```
+[![Clojars Project](https://img.shields.io/clojars/v/viz-cljc.svg)](https://clojars.org/viz-cljc)
 
 ##  Why?
 
